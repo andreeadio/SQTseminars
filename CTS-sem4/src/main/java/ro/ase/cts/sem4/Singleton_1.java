@@ -1,17 +1,17 @@
 package ro.ase.cts.sem4;
 
-public class Singleton {
+public class Singleton_1 {
 
-    private static Singleton instance;
+    private static Singleton_1 instance;
 
-    private Singleton() {
+    private Singleton_1() {
     }
 
-    public static Singleton getInstance()
+    public static Singleton_1 getInstance()
     {
         if(instance == null)
         {
-            instance = new Singleton();
+            instance = new Singleton_1();
         }
         return instance;
     }
