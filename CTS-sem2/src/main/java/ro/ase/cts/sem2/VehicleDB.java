@@ -62,3 +62,82 @@ class Square implements Height {
         length=h;
     }
 }
+
+
+//sem3
+//Interface segregation principle ISP
+
+interface Vehicle1 {
+    public void drive();
+    public void stop();
+    public void refuel();
+}
+
+interface Doors{
+    public void openDoors();
+}
+
+class Bike1 implements Vehicle1{
+
+
+    @Override
+    public void drive() {
+        System.out.println("it is driving");
+    }
+
+    @Override
+    public void stop() {
+
+    }
+
+    @Override
+    public void refuel() {
+
+    }
+}
+interface Engine {
+
+    public void start();
+
+}
+
+class Car1 {
+    private Engine engine;
+    public Car1(Engine e)
+    {
+        engine=e;
+    }
+    public void start()
+    {
+        engine.start();
+    }
+
+}
+
+class PetrolEngine implements Engine{
+
+    @Override
+    public void start() {
+
+    }
+}
+
+class DieselEngine implements Engine{
+
+    @Override
+    public void start() {
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
