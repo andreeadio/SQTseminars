@@ -1,2 +1,5 @@
-package ro.ase.cts.adapter;public class Adapter2 {
+package ro.ase.cts.adapter;
+
+ interface PaymentProcessor {
+     boolean processPayment();
 }
